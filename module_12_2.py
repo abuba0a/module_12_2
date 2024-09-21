@@ -19,7 +19,6 @@ class TournamentTest(TestCase):
         for test_key, test_value in cls.all_results.items():
             key_position = 1
             for key, value in test_value.items():
-                print(f'{key_position} : {value.name}')
                 key_position += 1
 
     def test_turn_1(self):
