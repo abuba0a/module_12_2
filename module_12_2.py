@@ -25,21 +25,18 @@ class TournamentTest(TestCase):
         turn_1 = HumanMoveTest.Tournament(90, self.runner_1, self.runner_3)
         result = turn_1.start()
         self.assertTrue(result[list(result.keys())[-1]] == 'Ник')
-        self.all_results['1,2'] = result
         print(f'{result}')
 
     def test_turn_2(self):
         turn_2 = HumanMoveTest.Tournament(90, self.runner_2, self.runner_3)
         result = turn_2.start()
         self.assertTrue(result[list(result.keys())[-1]] == 'Ник')
-        self.all_results['2,3'] = result
         print(f'{result}')
 
     def test_turn_3(self):
         turn_3 = HumanMoveTest.Tournament(90, self.runner_1, self.runner_2, self.runner_3)
         result = turn_3.start()
         self.assertTrue(result[list(result.keys())[-1]] == 'Ник')
-        self.all_results['1,2,3'] = result
         print(f'{result}')
 
 
