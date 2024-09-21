@@ -1,4 +1,3 @@
-# -*- coding: utf8 -*-
 import HumanMoveTest
 from unittest import TestCase
 
